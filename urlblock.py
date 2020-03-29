@@ -26,19 +26,19 @@ if os in 'win32':
     if choices == '8':
         try:
             fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
-            fp.write('127.0.0.1 vk.com \n')
-            fp.write('127.0.0.1 www.youtube.com \n') #добавляем в файл hosts сайты для блокировки
-            fp.write('127.0.0.1 www.instagram.com \n')
-            fp.write('127.0.0.1 ok.ru \n')
-            fp.write('127.0.0.1 www.facebook.com \n')
-            fp.write('127.0.0.1 zen.yandex.ru \n')
+            fp.write('0.0.0.0 vk.com \n')
+            fp.write('0.0.0.0 www.youtube.com \n') #добавляем в файл hosts сайты для блокировки
+            fp.write('0.0.0.0 www.instagram.com \n')
+            fp.write('0.0.0.0 ok.ru \n')
+            fp.write('0.0.0.0 www.facebook.com \n')
+            fp.write('0.0.0.0 zen.yandex.ru \n')
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как админ!')
     elif choices == '1':
         try:
             fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
-            fp.write('127.0.0.1 vk.com \n') #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 vk.com \n') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как админ!')
@@ -46,7 +46,7 @@ if os in 'win32':
     elif choices == '2':
         try:
             fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
-            fp.write('127.0.0.1 www.youtube.com \n') #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 www.youtube.com \n') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как админ!')
@@ -54,7 +54,7 @@ if os in 'win32':
     elif choices == '3':
         try:
             fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
-            fp.write('127.0.0.1 www.instagram.com \n') #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 www.instagram.com \n') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как админ!')
@@ -62,7 +62,7 @@ if os in 'win32':
     elif choices == '4':
         try:
             fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
-            fp.write('127.0.0.1 ok.ru \n') #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 ok.ru \n') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как админ!')
@@ -70,7 +70,7 @@ if os in 'win32':
     elif choices == '5':
         try:
             fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
-            fp.write('127.0.0.1 www.facebook.com \n') #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 www.facebook.com \n') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как админ!')
@@ -78,7 +78,7 @@ if os in 'win32':
     elif choices == '6':
         try:
             fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
-            fp.write('127.0.0.1 zen.yandex.ru \n') #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 zen.yandex.ru \n') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как админ!')
@@ -87,7 +87,7 @@ if os in 'win32':
         try:
             url = input('введите url для блокирования:')
             fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
-            fp.write('127.0.0.1 {0} \n'.format(url)) #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 {0} \n'.format(url)) #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как админ!')
@@ -96,12 +96,12 @@ else:
     if choices == '8':
         try:
             fp = open('/etc/hosts','a') #открываем файл
-            fp.write('127.0.0.1 vk.com \n')
-            fp.write('127.0.0.1 www.youtube.com \n') #добавляем в файл hosts сайты для блокировки
-            fp.write('127.0.0.1 www.instagram.com \n')
-            fp.write('127.0.0.1 ok.ru \n')
-            fp.write('127.0.0.1 www.facebook.com \n')
-            fp.write('127.0.0.1 zen.yandex.ru \n')
+            fp.write('0.0.0.0 vk.com \n')
+            fp.write('0.0.0.0 www.youtube.com \n') #добавляем в файл hosts сайты для блокировки
+            fp.write('0.0.0.0 www.instagram.com \n')
+            fp.write('0.0.0.0 ok.ru \n')
+            fp.write('0.0.0.0 www.facebook.com \n')
+            fp.write('0.0.0.0 zen.yandex.ru \n')
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как super user!')
@@ -109,7 +109,7 @@ else:
     elif choices == '1':
         try:
             fp = open('/etc/hosts','a') #открываем файл
-            fp.write('127.0.0.1 vk.com \n') #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 vk.com \n') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как super user!')
@@ -117,7 +117,7 @@ else:
     elif choices == '2':
         try:
             fp = open('/etc/hosts','a') #открываем файл
-            fp.write('0. ww.youtube.com \n') #добавляем в файл hosts сайт для блокировки
+            fp.write('0.0.0.0 www.youtube.com \n') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
             print('запустите программу как super user!')
