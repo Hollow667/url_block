@@ -25,7 +25,7 @@ choices = input(
 if os in 'win32':
     if choices == '8':
         try:
-            fp = open('C:\Windows\System32\drivers\etc\hosts','w') #открываем файл
+            fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
             fp.write('127.0.0.1 https://vk.com/')
             fp.write('127.0.0.1 https://www.youtube.com/') #добавляем в файл hosts сайты для блокировки
             fp.write('127.0.0.1 https://www.instagram.com/')
@@ -37,7 +37,7 @@ if os in 'win32':
             print('запустите программу как админ!')
     elif choices == '1':
         try:
-            fp = open('C:\Windows\System32\drivers\etc\hosts','w') #открываем файл
+            fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
             fp.write('127.0.0.1 https://vk.com/') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -45,7 +45,7 @@ if os in 'win32':
             exit()
     elif choices == '2':
         try:
-            fp = open('C:\Windows\System32\drivers\etc\hosts','w') #открываем файл
+            fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
             fp.write('127.0.0.1 https://www.youtube.com/') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -53,7 +53,7 @@ if os in 'win32':
             exit()
     elif choices == '3':
         try:
-            fp = open('C:\Windows\System32\drivers\etc\hosts','w') #открываем файл
+            fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
             fp.write('127.0.0.1 https://www.instagram.com/') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -61,7 +61,7 @@ if os in 'win32':
             exit()
     elif choices == '4':
         try:
-            fp = open('C:\Windows\System32\drivers\etc\hosts','w') #открываем файл
+            fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
             fp.write('127.0.0.1 https://ok.ru/') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -69,7 +69,7 @@ if os in 'win32':
             exit()
     elif choices == '5':
         try:
-            fp = open('C:\Windows\System32\drivers\etc\hosts','w') #открываем файл
+            fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
             fp.write('127.0.0.1 https://www.facebook.com') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -77,7 +77,7 @@ if os in 'win32':
             exit()
     elif choices == '6':
         try:
-            fp = open('C:\Windows\System32\drivers\etc\hosts','w') #открываем файл
+            fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
             fp.write('127.0.0.1 https://zen.yandex.ru') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -86,7 +86,7 @@ if os in 'win32':
     elif choices == '7':
         try:
             url = input('введите url для блокирования:')
-            fp = open('C:\Windows\System32\drivers\etc\hosts','w') #открываем файл
+            fp = open('C:\Windows\System32\drivers\etc\hosts','a') #открываем файл
             fp.write('127.0.0.1 {0}'.format(url)) #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -95,7 +95,7 @@ if os in 'win32':
 else:
     if choices == '8':
         try:
-            fp = open('/etc/hosts','w') #открываем файл
+            fp = open('/etc/hosts','a') #открываем файл
             fp.write('127.0.0.1 https://vk.com/')
             fp.write('127.0.0.1 https://www.youtube.com/') #добавляем в файл hosts сайты для блокировки
             fp.write('127.0.0.1 https://www.instagram.com/')
@@ -108,7 +108,7 @@ else:
             exit()
     elif choices == '1':
         try:
-            fp = open('/etc/hosts','w') #открываем файл
+            fp = open('/etc/hosts','a') #открываем файл
             fp.write('127.0.0.1 https://vk.com/') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -116,7 +116,7 @@ else:
             exit()
     elif choices == '2':
         try:
-            fp = open('/etc/hosts','w') #открываем файл
+            fp = open('/etc/hosts','a') #открываем файл
             fp.write('127.0.0.1 https://www.youtube.com/') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -124,7 +124,7 @@ else:
             exit()
     elif choices == '3':
         try:
-            fp = open('/etc/hosts','w') #открываем файл
+            fp = open('/etc/hosts','a') #открываем файл
             fp.write('127.0.0.1 https://www.instagram.com/') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -132,7 +132,7 @@ else:
             exit()
     elif choices == '4':
         try:
-            fp = open('/etc/hosts','w') #открываем файл
+            fp = open('/etc/hosts','a') #открываем файл
             fp.write('127.0.0.1 https://ok.ru/') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -140,7 +140,7 @@ else:
             exit()
     elif choices == '5':
         try:
-            fp = open('/etc/hosts','w') #открываем файл
+            fp = open('/etc/hosts','a') #открываем файл
             fp.write('127.0.0.1 https://www.facebook.com') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -148,7 +148,7 @@ else:
             exit()
     elif choices == '6':
         try:
-            fp = open('/etc/hosts','w') #открываем файл
+            fp = open('/etc/hosts','a') #открываем файл
             fp.write('127.0.0.1 https://zen.yandex.ru') #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
@@ -157,7 +157,7 @@ else:
     elif choices == '7':
         try:
             url = input('введите url для блокирования:')
-            fp = open('/etc/hosts','w') #открываем файл
+            fp = open('/etc/hosts','a') #открываем файл
             fp.write('127.0.0.1 {0}'.format(url)) #добавляем в файл hosts сайт для блокировки
             fp.close() #закрываем файл
         except PermissionError:
